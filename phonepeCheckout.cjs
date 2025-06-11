@@ -18,7 +18,7 @@ app.get("/pay", async (req, res) => {
     amount: parseInt(amount),
     redirectUrl,
     redirectMode: "REDIRECT",
-    callbackUrl: redirectUrl,
+    callbackUrl: 'https://thejerseyhub.in/_functions/phonepeProvider/webhook',
     paymentInstrument: { type: "PAY_PAGE" }
   };
 
