@@ -3,9 +3,9 @@ const crypto = require("crypto");
 const app = express();
 const port = process.env.PORT || 3000;
 
-const merchantId = "PGTESTPAYUAT";
-const saltKey = "e522d95d-49fe-46a4-acdb-1349f91958cf";
-const redirectUrl = "https://www.google.com"; // Change this to your actual redirect URL
+const merchantId = "TEST-M23H1OQBC10F4_25061";
+const saltKey = "Y2VhYzljMzMtNGY5ZC00Mzg5LTg5NjQtYmViZDFkMGU2MDkz";
+const redirectUrl = "https://www.google.com"; // 
 
 app.get("/pay", async (req, res) => {
   const { amount, name, email } = req.query;
